@@ -6,15 +6,54 @@
 
 - How to name the folders/files?
 
-Component names "userInput" / "userOutput"
+Component names "UserInput" / "UserOutput"
 Include these into your main "App.js" file.
 
-In the "userInput" component, add an "Input Element".
-In the "userOutput" component, add "Two Paragraphs".
+In the "UserInput" component, add an "Input Element".
+In the "UserOutput" component, add "Two Paragraphs".
 // add any text you want inside both paragraphs.
 
 Then add both "input and output" components, in your "App.js".
-// Use multiple userOutputs for now.
+// Use multiple UserOutputs for now.
+
+Add dynamic content to components.
+
+Pass a "Username" to the "UserOutput" component, using "props".
+Inside the component, you should also display it.
+
+Next add a Username "state", with a property named "userName" in the state "Object".
+Give it any username you'd like. Any string of your choice.
+
+Pass the state userName, to the UserOutput component.
+
+Next, Add a "method" which allows you to manipulate state,
+and keep in mind "HOW" you should manipulate state.
+
+This method would be used as an event handler method,
+so pick an appropriate name.
+
+The method then needs to be called, to really manipulate the state.
+Pass event handler method reference, to UserInput component
+Then bind it to the "UserInput" element.
+
+Ensure the new input entered by the user,
+overrides the old username.
+// Pass Reference to EvenHandler Method, to UserInput,
+// Now just somehow listen for changes to the input,
+// and then call the method, to manipulate the state.
+
+Now setup 2-way binding so that the input in the UserInput component,
+also displays the "initial" username.
+
+It would currently only react to "changes" of the "username",
+but always showing the correct username is a huge improvement.
+
+
+Finally, add some styling!
+
+Just make sure to practice both "stylesheets" and "inline" styles.
+
+
 
 
 

@@ -4,13 +4,13 @@ import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
-  render() {
+  render(props) {
     return (
       <div>
         <h1>Hello, is this thing working?</h1>
         <UserInput />
-        <UserOutput />
-        <UserOutput />
+        <UserOutput userName="Anthony" />
+        <UserOutput userName="Debra" />
         <UserOutput />
         <UserOutput />
       </div >
