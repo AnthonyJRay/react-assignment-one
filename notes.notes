@@ -1,0 +1,20 @@
+-React The Complete Guide-
+
+-Assignment 1 Instructions-
+
+-1- Create "two new components"
+
+- How to name the folders/files?
+
+Component names "userInput" / "userOutput"
+Include these into your main "App.js" file.
+
+In the "userInput" component, add an "Input Element".
+In the "userOutput" component, add "Two Paragraphs".
+// add any text you want inside both paragraphs.
+
+Then add both "input and output" components, in your "App.js".
+// Use multiple userOutputs for now.
+
+
+
