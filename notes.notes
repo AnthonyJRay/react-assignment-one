@@ -33,8 +33,8 @@ This method would be used as an event handler method,
 so pick an appropriate name.
 
 The method then needs to be called, to really manipulate the state.
-Pass event handler method reference, to UserInput component
-Then bind it to the "UserInput" element.
+Pass event handler method as a reference to UserInput component,
+and then bind it to the "UserInput" element.
 
 Ensure the new input entered by the user,
 overrides the old username.
@@ -53,6 +53,35 @@ Finally, add some styling!
 
 Just make sure to practice both "stylesheets" and "inline" styles.
 
+
+// Addtional Notes
+
+State is just a Property of your Class.
+Just as Render() is a method.
+
+State is just a JavaScript Object.
+
+state = {
+  userName: 'Violet'
+}
+
+<Component userName={this.state.userName}/>
+
+
+Now we need to add an Event Handler to help make our state and component a bit more dynamic.
+
+userNameChangedHandler = () => {
+
+}
+
+This is the way you should write your event methods, 
+with the intention of using the "this" keyword.
+As writing this way, keeps the context of "this" still on the class.
+
+next you can use this.setState.
+
+setState will properly merge your existing state and new state. 
+Aswell as inform React the state has been changed and re-render.
 
 
 
